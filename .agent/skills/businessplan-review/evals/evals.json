@@ -1,0 +1,17 @@
+{
+  "skill_name": "businessplan-review",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Critique my business plan. Act as a VC and review my deck located in /Users/yasutakairino/businessplan/businessplan-writing. Give me a structured markdown report.",
+      "expected_output": "A highly structured markdown report containing an overall score, strengths, weaknesses, a financial feasibility check, Sequoia framework alignment analysis, and actionable recommendations.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Act as a VC and review my deck. Specifically look at the financials and market sizing in /Users/yasutakairino/businessplan/businessplan-writing.",
+      "expected_output": "A highly structured markdown report identical to the established format, leaning heavily into critiquing unit economics and TAM calculations.",
+      "files": []
+    }
+  ]
+}

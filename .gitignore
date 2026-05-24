@@ -1,0 +1,8 @@
+.agent/
+.DS_Store
+input/
+old/
+docs/
+instructions/
+# Keep output directory but ignore its source folders
+# (Only the content of output/ will be deployed)

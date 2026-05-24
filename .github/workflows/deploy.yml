@@ -31,13 +31,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: List files for debugging
+        run: |
+          echo "Listing root directory:"
+          ls -R
+          echo "Checking if output directory exists:"
+          if [ -d "output" ]; then echo "output directory exists"; else echo "output directory NOT found"; exit 1; fi
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository or a specific directory
-          path: './output'
+          path: 'output'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
